@@ -71,6 +71,14 @@ header,
 footer {
     font-family: var(--alternative-font);
     color: var(--white-font-solid);
+    background-color: var(--dark-bg-solid);
+}
+
+nav a {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 ul, 
@@ -82,7 +90,129 @@ p {
     font-size: 1.8em;
 }
 
-.container {
-    max-width: 1200px;
+main {
+    max-width: 80%;
     margin: 0 auto;
+}
+
+
+
+/* Jumbotron */
+section.jumbotron {
+    width: 100%;
+    color: var(--white-font-solid);
+    font-family: var(--alternative-font);
+    text-align: left;
+    line-height: 1.5;
+    padding: 80px 0 100px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("imgs/funkos-banner.webp");
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.jumbotron article {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.jumbotron article h3 {
+    font-weight: 700;
+    font-size: 38px;
+}
+
+section.jumbotron article p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+section.jumbotron article a {
+    font-family: var(--base-font);
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: var(--white-font-solid);
+    color: var(--dark-bg-solid);
+    padding: 12px 60px;
+    border-radius: 50px;
+    line-height: 1.5;
+    transition: 300ms;
+}
+
+section.jumbotron article a:hover {
+    background-color: var(--primary-solid);
+    color: var(--white-font-solid);
+    transition: 300ms;
+}
+
+
+
+
+
+/* Collections */
+
+main hr {
+    border: 3px solid var(--primary-solid);
+    margin: 20px auto 30px auto;
+    width: 100%;
+}
+
+main .collection-name {
+    font-weight: 500;
+    font-size: 46px;
+    font-family: var(--alternative-font);
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+main .collection-desc {
+    font-weight: 400;
+    font-size: 24px;
+    font-family: var(--alternative-font);
+    line-height: 1.5;
+}
+
+main .collection-link {
+    font-weight: 500;
+    font-size: 24px;
+    font-family: var(--base-font);
+    text-transform: uppercase;
+    background-color: var(--dark-bg-solid);
+    color: var(--white-font-solid);
+    padding: 12px 40px;
+    border-radius: 50px;
+    line-height: 1.5;
+    transition: 300ms;
+}
+
+main .collection-link:hover {
+    background-color: var(--primary-solid);
+    color: var(--white-font-solid);
+    transition: 300ms;
+}
+
+
+/* Latest news */
+
+main h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: #111111;
+    text-transform: uppercase;
+    font-family: var(--alternative-font);
+}
+
+
+/* Footer */
+
+footer {
+    padding: 100px 100px 20px 100px;
+}
+
+footer p {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
 }

@@ -84,6 +84,7 @@ nav a {
 ul, 
 ol {
     list-style-type: none;
+    list-style: none;
 }
 
 p {
@@ -96,8 +97,29 @@ main {
 }
 
 
+/* Nav */
+
+header nav {
+    width: 100%;
+    padding: 40px 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+
+
 
 /* Jumbotron */
+
 section.jumbotron {
     width: 100%;
     color: var(--white-font-solid);
@@ -153,13 +175,47 @@ section.jumbotron article a:hover {
 
 /* Collections */
 
-main hr {
+main section.collections {
+    width: 100%;
+    margin: 50px auto 50px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+main section.collections article {
+    width: 60%;
+    order: 1;
+}
+
+main section.collections picture {
+    width: 40%;
+    order: 2;
+}
+
+main section.side2 article {
+    width: 60%;
+    order: 2;
+}
+
+main section.side2 picture {
+    width: 40%;
+    order: 1;
+}
+
+main section.collections picture img {
+    width: 100%;
+}
+
+main section.collections article hr {
     border: 3px solid var(--primary-solid);
     margin: 20px auto 30px auto;
     width: 100%;
 }
 
-main .collection-name {
+main section.collections h3.collection-name {
     font-weight: 500;
     font-size: 46px;
     font-family: var(--alternative-font);
@@ -167,14 +223,14 @@ main .collection-name {
     line-height: 1.5;
 }
 
-main .collection-desc {
+main section.collections p.collection-desc {
     font-weight: 400;
     font-size: 24px;
     font-family: var(--alternative-font);
     line-height: 1.5;
 }
 
-main .collection-link {
+main section.collections a.collection-link {
     font-weight: 500;
     font-size: 24px;
     font-family: var(--base-font);
@@ -187,7 +243,7 @@ main .collection-link {
     transition: 300ms;
 }
 
-main .collection-link:hover {
+main section.collections a.collection-link:hover {
     background-color: var(--primary-solid);
     color: var(--white-font-solid);
     transition: 300ms;
@@ -209,6 +265,7 @@ main h2 {
 
 footer {
     padding: 100px 100px 20px 100px;
+    margin: 50px auto 0 auto;
 }
 
 footer p {
@@ -216,3 +273,14 @@ footer p {
     font-size: 20px;
     text-align: center;
 }
+
+footer nav {
+    width: 100%;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+

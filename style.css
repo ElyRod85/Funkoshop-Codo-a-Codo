@@ -101,13 +101,13 @@ header nav picture {
     width: 48%;
 }
 
-@media (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
     header nav {
         padding: 40px 60px;
     }
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     header nav {
         padding: 40px;
     }
@@ -116,7 +116,7 @@ header nav picture {
     }
 }
 
-@media (max-width: 868px) {
+@media screen and (max-width: 868px) {
     header nav {
         flex-flow: column wrap;
         justify-content: center;
@@ -279,7 +279,7 @@ main section.collections a.collection-link:hover {
 }
 
 
-@media (max-width: 868px) {
+@media screen and (max-width: 868px) {
     main section.collections {
         flex-flow: column wrap;
         margin: 50px auto 100px auto;
@@ -397,7 +397,7 @@ main section.news p.new-tag {
     right: 10px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     main section.news ul {
         margin: 20px auto 50px auto;
         flex-flow: column wrap;
@@ -460,7 +460,7 @@ footer nav picture {
 
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     footer {
         padding: 70px 50px 20px 50px;
     }
